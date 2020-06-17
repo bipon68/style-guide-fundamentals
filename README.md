@@ -13,6 +13,7 @@
 - [BootStrap](https://getbootstrap.com/docs/4.5/getting-started/introduction/)
 - [Marvel](https://marvelapp.com/styleguide/overview/introduction)
 - [Atomic Design Methodology](https://atomicdesign.bradfrost.com/chapter-2/)
+- [Sass](http://sass.js.org/)
 
 ## Requirements
 
