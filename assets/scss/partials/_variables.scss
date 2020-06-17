@@ -60,3 +60,19 @@ $h3: px-to-percent(20);
 $h4: px-to-percent(18);
 $h5: px-to-percent(16);
 $h6: px-to-percent(14);
+
+
+// ---------------------------------------------
+// VARIABLES: FONT ICONS
+
+// Font Icons: Families
+$font-family-icon: "icomoon";
+
+// Font Icons: Spacing: Left and Right
+$icon-spacing: 5px;
+$icon-spacing-lg: ($icon-spacing * 2);
+
+// Font Icons: Sizes
+$icon-size-lg: px-to-percent(16);
+$icon-size-xl: px-to-percent(18);
+$icon-size-xxl: px-to-percent(24);
