@@ -68,3 +68,68 @@
   .position-relative {
     position: relative;
   }
+
+  
+// ---------------------------------------------
+// GLOBALS: ICONS
+
+// Icons: Sizes
+@mixin icon-size-lg {
+    font-size: $icon-size-lg;
+  }
+  
+  .icon-size-lg {
+    @include icon-size-lg;
+  }
+  
+  @mixin icon-size-xl {
+    font-size: $icon-size-xl;
+  }
+  
+  .icon-size-xl {
+    @include icon-size-xl;
+  }
+  
+  @mixin icon-size-xxl {
+    font-size: $icon-size-xxl;
+  }
+  
+  .icon-size-xxl {
+    @include icon-size-xxl;
+  }
+  
+  // Icons: Spacing
+  // Adds left and right spacing via mixins and classes.
+  // Useful for icons in buttons, as bullet points in lists, etc.
+  
+  @mixin icon-left {
+    margin-right: $icon-spacing;
+  }
+  
+  .icon-left {
+    @include icon-left;
+  }
+  
+  @mixin icon-left-lg {
+    margin-right: $icon-spacing-lg;
+  }
+  
+  .icon-left-lg {
+    @include icon-left-lg;
+  }
+  
+  @mixin icon-right {
+    margin-left: $icon-spacing;
+  }
+  
+  .icon-right {
+    @include icon-right;
+  }
+  
+  @mixin icon-right-lg {
+    margin-left: $icon-spacing-lg;
+  }
+  
+  .icon-right-lg {
+    @include icon-right-lg;
+  }
