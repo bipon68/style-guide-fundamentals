@@ -203,3 +203,8 @@
   margin-bottom: 10px;
   background-color: #C7E9DD;
 }
+
+.styleguide-demo-each--margin-auto > div {
+  background-color: #C7E9DD;
+  padding: 10px;
+}

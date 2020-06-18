@@ -245,3 +245,10 @@ $zindex-styleguide-menu: 1000;
     background-color: $brand-1-x-light;
   }
 }
+// Style Guide: Demo Block: Auto Margins: Modifier
+.styleguide-demo-each--margin-auto {
+  > div {
+    background-color: $brand-1-x-light;
+    padding: $spacing;
+  }
+}

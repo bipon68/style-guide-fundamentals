@@ -743,6 +743,44 @@ table {
   content: "";
 }
 
+.center-element {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+.vertical-align-top {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.vertical-align-middle {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.vertical-align-bottom {
+  display: inline-block;
+  vertical-align: bottom;
+}
+
+.vertical-center {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.absolute-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+}
+
+.position-relative {
+  position: relative;
+}
+
 *, *:before, *:after {
   box-sizing: border-box;
 }
