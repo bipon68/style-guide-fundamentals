@@ -53,6 +53,142 @@ table {
   border-spacing: 0;
 }
 
+.brand-1 {
+  color: #3ABB8D;
+}
+
+.brand-1-bg {
+  background-color: #3ABB8D;
+}
+
+.brand-1-light {
+  color: #75C8AA;
+}
+
+.brand-1-light-bg {
+  background-color: #75C8AA;
+}
+
+.brand-1-x-light {
+  color: #C7E9DD;
+}
+
+.brand-1-x-light-bg {
+  background-color: #C7E9DD;
+}
+
+.brand-2 {
+  color: #313C5A;
+}
+
+.brand-2-bg {
+  background-color: #313C5A;
+}
+
+.brand-2-light {
+  color: #41568C;
+}
+
+.brand-2-light-bg {
+  background-color: #41568C;
+}
+
+.red-crimson {
+  color: #D05858;
+}
+
+.red-crimson-bg {
+  background-color: #D05858;
+}
+
+.blue-aqua {
+  color: #3E9CD0;
+}
+
+.blue-aqua-bg {
+  background-color: #3E9CD0;
+}
+
+.black {
+  color: #000;
+}
+
+.black-bg {
+  background-color: #000;
+}
+
+.gray-coal {
+  color: #222;
+}
+
+.gray-coal-bg {
+  background-color: #222;
+}
+
+.gray-lead {
+  color: #666;
+}
+
+.gray-lead-bg {
+  background-color: #666;
+}
+
+.gray-cement {
+  color: #999;
+}
+
+.gray-cement-bg {
+  background-color: #999;
+}
+
+.gray-titanium {
+  color: #AAA;
+}
+
+.gray-titanium-bg {
+  background-color: #AAA;
+}
+
+.gray-cloud {
+  color: #DADEE8;
+}
+
+.gray-cloud-bg {
+  background-color: #DADEE8;
+}
+
+.gray-mist {
+  color: #F1F1F1;
+}
+
+.gray-mist-bg {
+  background-color: #F1F1F1;
+}
+
+.white {
+  color: #FFF;
+}
+
+.white-bg {
+  background-color: #FFF;
+}
+
+.color-font {
+  color: #666;
+}
+
+.color-font-bg {
+  background-color: #666;
+}
+
+.color-link {
+  color: #3ABB8D;
+}
+
+.color-link-bg {
+  background-color: #3ABB8D;
+}
+
 @font-face {
   font-family: "icomoon";
   src: url("../../assets/font-icon/fonts/icomoon.ttf?w0gcvh") format("truetype"), url("../../assets/font-icon/fonts/icomoon.woff?w0gcvh") format("woff"), url("../../assets/font-icon/fonts/icomoon.svg?w0gcvh#icomoon") format("svg");
