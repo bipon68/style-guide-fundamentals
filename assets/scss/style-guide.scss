@@ -231,4 +231,10 @@ $zindex-styleguide-menu: 1000;
     background-color: $gray-lead;
   }
 }
-
+// Style Guide: Demo Block: Spacing: Modifier
+.styleguide-demo-each--spacing {
+  > div {
+    background-color: $gray-mist;
+    margin: 0 0 $spacing 0;
+  }
+}

@@ -193,3 +193,8 @@
 .styleguide-demo-each--colors .white, .styleguide-demo-each--colors .gray-mist, .styleguide-demo-each--colors .color-disabled {
   background-color: #666;
 }
+
+.styleguide-demo-each--spacing > div {
+  background-color: #F1F1F1;
+  margin: 0 0 10px 0;
+}
