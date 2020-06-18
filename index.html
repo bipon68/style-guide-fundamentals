@@ -376,19 +376,24 @@
           <section id="styleguide-section-grid" class="styleguide-section">
             <h2>Grid</h2>
             <div class="styleguide-section-docs">
-              <p>{SECTION_DOCUMENTATION}</p>
+              <p>To create a grid structure, start with a container, include a row and add columns. Use flex helpers with rows or float helpers with columns.</p>
+              <p>A 12 column grid is provided with classes for each media query breakpoint. E.g. <code class="styleguide-code-inline">col-12</code>, <code class="styleguide-code-inline">col-6-sm</code>, <code class="styleguide-code-inline">col-4-mid</code> and <code class="styleguide-code-inline">col-3-lg</code>.</p>
+              <p>To change the number of columns, change the value of the <code class="styleguide-code-inline">grid-column-count</code> variable in the <em>variables</em> partial. Doing so will automatically create new columns across all breakpoints. For example, you could change the numbers of columns from 6 to 12 or 24.</p>
             </div>
             <div class="styleguide-section-block">
               <div class="styleguide-section-files">Reference files: {FILE_NAMES}</div>
 
-              <h3>{DEMO_TITLE}</h3>
+              <h3>Grid: Containers</h3>
               <!-- Add optional documentation for this demo -->
               <!-- <div class="styleguide-section-docs">
                 <p>{SECTION_DOCUMENTATION}</p>
               </div> -->
               <div class="styleguide-demo-block">
-                <div class="styleguide-demo-each">
-                  {DEMO_MARKUP}
+                <div class="styleguide-demo-each styleguide-demo-each--containers">
+                  <div class="container-lg">Container: Large: Most Common Size</div>
+                  <div class="container-mid">Container: Mid</div>
+                  <div class="container-sm">Container: Small</div> 
+                  <div class="container-full">Container: Full Width</div>
                 </div> <!-- /.styleguide-demo-each -->
                 <button class="btn-styleguide-code js-btn-styleguide-code">Code</button>
               </div> <!-- /.styleguide-demo-block -->

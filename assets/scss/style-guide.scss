@@ -238,3 +238,10 @@ $zindex-styleguide-menu: 1000;
     margin: 0 0 $spacing 0;
   }
 }
+// Style Guide: Demo Block: Containers: Modifier
+.styleguide-demo-each--containers {
+  > div {
+    margin-bottom: $spacing;
+    background-color: $brand-1-x-light;
+  }
+}

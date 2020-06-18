@@ -198,3 +198,8 @@
   background-color: #F1F1F1;
   margin: 0 0 10px 0;
 }
+
+.styleguide-demo-each--containers > div {
+  margin-bottom: 10px;
+  background-color: #C7E9DD;
+}
