@@ -169,3 +169,27 @@
   display: block;
   width: 100px;
 }
+
+.styleguide-box-demo {
+  width: 100px;
+  height: 60px;
+  display: inline-block;
+  vertical-align: top;
+  margin: 10px 0 20px;
+}
+.styleguide-box-demo.white-bg, .styleguide-box-demo.gray-mist-bg {
+  border: 1px solid #DADEE8;
+}
+
+.styleguide-demo-each--colors {
+  font-size: 85.7142857143%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.styleguide-demo-each--colors > div {
+  padding: 0 7.5px;
+}
+.styleguide-demo-each--colors .white, .styleguide-demo-each--colors .gray-mist, .styleguide-demo-each--colors .color-disabled {
+  background-color: #666;
+}
