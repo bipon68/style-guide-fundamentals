@@ -743,6 +743,58 @@ table {
   content: "";
 }
 
+.font-family-1 {
+  font-family: "Nunito Sans", sans-serif;
+}
+
+.font-size {
+  font-size: 14px;
+}
+
+.font-size-sm {
+  font-size: 85.7142857143%;
+}
+
+.font-size-xs {
+  font-size: 71.4285714286%;
+}
+
+.font-size-lg {
+  font-size: 114.2857142857%;
+}
+
+.font-regular {
+  font-weight: 400;
+}
+
+.font-semi-bold {
+  font-weight: 600;
+}
+
+.font-bold {
+  font-weight: 700;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-uppercase {
+  text-transform: uppercase;
+}
+
+.text-underline {
+  text-decoration: underline;
+}
+
 .center-element {
   margin-left: auto;
   margin-right: auto;

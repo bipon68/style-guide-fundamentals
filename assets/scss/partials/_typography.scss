@@ -1,0 +1,80 @@
+// ---------------------------------------------
+// TYPOGRAPHY
+
+
+// ---------------------------------------------
+// TYPOGRAPHY: FONTS: FAMILIES
+
+.font-family-1 {
+    font-family: $font-family-1;
+  }
+  
+  
+  // ---------------------------------------------
+  // TYPOGRAPHY: FONTS: SIZES
+  // Generates classes for font sizes
+  // E.g., font-size, font-size-sm, font-size-lg
+  
+  // Sass Map to store font sizes
+  $font-sizes-map: (
+    "font-size": $font-size,
+    "font-size-sm": $font-size-sm,
+    "font-size-xs": $font-size-xs,
+    "font-size-lg": $font-size-lg
+  );
+  
+  // @each Sass loop to generate classes
+  @each $name, $value in $font-sizes-map {
+    .#{$name} {
+      font-size: $value;
+    }
+  }
+  
+  
+  // ---------------------------------------------
+  // TYPOGRAPHY: FONT WEIGHTS
+  
+  // Generates classes for font weights
+  // E.g., font-regular, font-semi-bold, font-bold
+  
+  // Sass Map to store font weights
+  $font-weight-map: (
+    "font-regular": $font-regular,
+    "font-semi-bold": $font-semi-bold,
+    "font-bold": $font-bold
+  );
+  
+  // @each Sass loop to generate classes
+  @each $name, $value in $font-weight-map {
+    .#{$name} {
+      font-weight: $value;
+    }
+  }
+  
+  
+  // ---------------------------------------------
+  // TYPOGRAPHY: ALIGNMENT
+  
+  .text-left {
+    text-align: left;
+  }
+  
+  .text-right {
+    text-align: right;
+  }
+  
+  .text-center {
+    text-align: center;
+  }
+  
+  
+  // ---------------------------------------------
+  // TYPOGRAPHY: TEXT
+  
+  .text-uppercase {
+    text-transform: uppercase;
+  }
+  
+  .text-underline {
+    text-decoration: underline;
+  }
