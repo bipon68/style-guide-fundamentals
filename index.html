@@ -69,23 +69,58 @@
           <section id="styleguide-section-logo" class="styleguide-section">
             <h2>Logo</h2>
             <div class="styleguide-section-docs">
-              <p>{SECTION_DOCUMENTATION}</p>
+              <p>Adopt-a-Tree's logo is available in two colors, green and white, as two separate SVG files and a font icon with class <code class="styleguide-code-inline">at-icon-logo</code>. Usage of the SVG file in an image tag is preferred.</p>
+              <p>A logo with a gradient circle is also available as an SVG file.</p>
+              <p>All logos can be enlarged without incurring a loss in quality.</p>
             </div>
             <div class="styleguide-section-block">
-              <div class="styleguide-section-files">Reference files: {FILE_NAMES}</div>
-
-              <h3>{DEMO_TITLE}</h3>
-              <!-- Add optional documentation for this demo -->
-              <!-- <div class="styleguide-section-docs">
-                <p>{SECTION_DOCUMENTATION}</p>
-              </div> -->
+              <h3>Logo: Default: SVG</h3>
               <div class="styleguide-demo-block">
                 <div class="styleguide-demo-each">
-                  {DEMO_MARKUP}
+                  <img src="assets/svg/logos/logo.svg" alt="Logo: Adopt-a-Tree" width="36" height="36">
                 </div> <!-- /.styleguide-demo-each -->
-                <button class="btn-styleguide-code js-btn-styleguide-code">Code</button>
+                <button class="btn-styleguide-code js-btn-styleguide-code btn btn--brand-1 btn--sm">Code</button>
               </div> <!-- /.styleguide-demo-block -->
 
+              <h3>Logo: Default: Icon Font</h3>
+              <div class="styleguide-demo-block">
+                <div class="styleguide-demo-each">
+                  <div>
+                    <span class="at-icon-logo brand-1"></span>
+                  </div>
+                </div> <!-- /.styleguide-demo-each -->
+                <button class="btn-styleguide-code js-btn-styleguide-code btn btn--brand-1 btn--sm">Code</button>
+              </div> <!-- /.styleguide-demo-block -->
+
+              <h3>Logo: White Variant: SVG</h3>
+              <div class="styleguide-section-docs">
+                <p>A white variant of the logo can be optionally used to contrast dark backgrounds.</p>
+              </div>
+              <div class="styleguide-demo-block">
+                <div class="styleguide-demo-each black-bg">
+                  <img src="assets/svg/logos/logo-white.svg" alt="Logo: Adopt-a-Tree" width="36" height="36">
+                </div> <!-- /.styleguide-demo-each -->
+                <button class="btn-styleguide-code js-btn-styleguide-code btn btn--brand-1 btn--sm">Code</button>
+              </div> <!-- /.styleguide-demo-block -->
+
+              <h3>Logo: White Variant: Icon Font</h3>
+              <div class="styleguide-demo-block">
+                <div class="styleguide-demo-each black-bg">
+                  <div>
+                    <span class="at-icon-logo white"></span>
+                  </div>
+                </div> <!-- /.styleguide-demo-each -->
+                <button class="btn-styleguide-code js-btn-styleguide-code btn btn--brand-1 btn--sm">Code</button>
+              </div> <!-- /.styleguide-demo-block -->
+
+              <h3>Logo: Gradient with Circle: SVG</h3>
+              <div class="styleguide-demo-block">
+                <div class="styleguide-demo-each">
+                  <img src="assets/svg/logos/logo-gradient-green-circle.svg" alt="Logo: Adopt-a-Tree" width="144" height="144">
+                </div> <!-- /.styleguide-demo-each -->
+                <button class="btn-styleguide-code js-btn-styleguide-code btn btn--brand-1 btn--sm">Code</button>
+              </div> <!-- /.styleguide-demo-block -->
+              
             </div> <!-- /.styleguide-section-block -->
           </section>
 
@@ -463,7 +498,7 @@
               </div>
               <div class="styleguide-demo-block">
                 <div class="styleguide-demo-each">
-                  <style>
+                  <!-- <style>
                     .selector {
                       width: 100%;
 
@@ -493,7 +528,7 @@
                         width: 70%;
                       }
                     }              
-                  </style>
+                  </style> -->
                 </div> <!-- /.styleguide-demo-each -->
                 <button class="btn-styleguide-code js-btn-styleguide-code">Code</button>
               </div> <!-- /.styleguide-demo-block -->
