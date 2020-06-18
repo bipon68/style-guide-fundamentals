@@ -92,10 +92,12 @@
           <section id="styleguide-section-colors" class="styleguide-section">
             <h2>Colors</h2>
             <div class="styleguide-section-docs">
-              <p>{SECTION_DOCUMENTATION}</p>
+              <p>Use variables or classes for colors.</p>
+              <p>Background colors have a <code class="styleguide-code-inline">-bg</code> suffix.</p>
+              <p>To incorporate a new color, add the color variable to the <em>variables</em> partial and refer to it in the Sass map inside the <em>colors</em> partial.</p>
             </div>
             <div class="styleguide-section-block">
-              <div class="styleguide-section-files">Reference files: {FILE_NAMES}</div>
+              <div class="styleguide-section-files">Reference files: _colors.scss, _variables.scss</div>
 
               <h3>Colors: Brand</h3>
 
@@ -214,10 +216,14 @@
           <section id="styleguide-section-spacing" class="styleguide-section">
             <h2>Spacing</h2>
             <div class="styleguide-section-docs">
-              <p>{SECTION_DOCUMENTATION}</p>
+              <p>Use variables or classes for spacing.</p>
+              <p>Spacing helpers can be used for padding, margins, positioning elements, etc.</p>
+              <p>The spacing variables are <code class="styleguide-code-inline">$spacing</code>, <code class="styleguide-code-inline">$spacing-2</code>, <code class="styleguide-code-inline">$spacing-3</code> and <code class="styleguide-code-inline">$spacing-half</code>.</p>
+              <p>The default <code class="styleguide-code-inline">$spacing</code> variable's value is 10 pixels.</p>
+              <p><code class="styleguide-code-inline">$spacing-2</code> is twice the value of <code class="styleguide-code-inline">$spacing</code> and so on.</p>
             </div>
             <div class="styleguide-section-block">
-              <div class="styleguide-section-files">Reference files: {FILE_NAMES}</div>
+              <div class="styleguide-section-files">Reference files: _spacing.scss, _variables.scss</div>
 
               <h3>Spacing: All Sides</h3>
               <!-- Add optional documentation for this demo -->
