@@ -353,19 +353,53 @@
           <section id="styleguide-section-media" class="styleguide-section">
             <h2>Media Queries</h2>
             <div class="styleguide-section-docs">
-              <p>{SECTION_DOCUMENTATION}</p>
+              <p>The site primarily uses min-width media query variables since the layout is mobile-first. However, max-width media query variables are also available.</p>
+              <p>Min-width media query variables: <code class="styleguide-code-inline">$media-sm</code>, <code
+                  class="styleguide-code-inline">$media-mid</code>, <code class="styleguide-code-inline">$media-lg</code>.</p>
+              <p>Max-width media query variables: <code class="styleguide-code-inline">$media-sm-max</code>, <code class="styleguide-code-inline">$media-mid-max</code>, <code class="styleguide-code-inline">$media-lg-max</code>.</p>
+              <p>Media queries are usually nested within the selector they are associated with.</p>
             </div>
             <div class="styleguide-section-block">
-              <div class="styleguide-section-files">Reference files: {FILE_NAMES}</div>
+              <div class="styleguide-section-files">Reference files: _variables.scss</div>
 
               <h3>{DEMO_TITLE}</h3>
               <!-- Add optional documentation for this demo -->
-              <!-- <div class="styleguide-section-docs">
-                <p>{SECTION_DOCUMENTATION}</p>
-              </div> -->
+              <div class="styleguide-section-docs">
+                <p>Click the "Code" button to see a contrived example of all media queries on the site.</p>
+              </div>
               <div class="styleguide-demo-block">
                 <div class="styleguide-demo-each">
-                  {DEMO_MARKUP}
+                  <style>
+                    .selector {
+                      width: 100%;
+
+                      // Media Queries: Min Width
+                      @media (min-width: $media-sm) {
+                        width: 60%;
+                      }
+
+                      @media (min-width: $media-mid) {
+                        width: 50%;
+                      }
+
+                      @media (min-width: $media-lg) {
+                        width: 40%;
+                      }
+
+                      // Media Queries: Max Width
+                      @media (max-width: $media-lg-max) {
+                        width: 90%;
+                      }
+
+                      @media (max-width: $media-mid-max) {
+                        width: 80%;
+                      }
+
+                      @media (max-width: $media-sm-max) {
+                        width: 70%;
+                      }
+                    }              
+                  </style>
                 </div> <!-- /.styleguide-demo-each -->
                 <button class="btn-styleguide-code js-btn-styleguide-code">Code</button>
               </div> <!-- /.styleguide-demo-block -->
