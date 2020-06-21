@@ -78,3 +78,77 @@
   .text-underline {
     text-decoration: underline;
   }
+
+  // ---------------------------------------------
+// TYPOGRAPHY: HTML ELEMENTS
+
+// HTML Elements: strong, b
+strong, b {
+  font-weight: $font-bold;
+}
+
+// HTML Elements: em, i
+em, i {
+  font-style: italic;
+}
+
+// HTML Elements: Headings
+// Generates styles for elements and classes for headings h1 through h6
+
+// Sass Map to store heading sizes
+$heading-sizes-map: (
+  "h1": $h1,
+  "h2": $h2,
+  "h3": $h3,
+  "h4": $h4,
+  "h5": $h5,
+  "h6": $h6
+);
+
+// @each Sass loop to generate styles for HTML headings h1 - h6
+@each $name, $value in $heading-sizes-map {
+  #{$name} {
+    color: $gray-coal;
+    font-size: $value;
+    font-weight: $font-semi-bold;
+    line-height: 1.2;
+    margin: 0 0 $spacing-2 0;
+  }
+}
+
+
+// HTML Elements: Paragraphs
+p {
+  margin-bottom: $spacing;
+}
+
+// HTML Elements: Lists: Unordered and Ordered
+ul, ol {
+  list-style-position: inside;
+  margin-bottom: $spacing;
+  padding-left: $spacing;
+
+  li {
+    margin-bottom: $spacing;
+  }
+
+  ul {
+    padding-left: $spacing-2;
+  }
+}
+
+ul {
+  list-style-type: disc;
+}
+
+ol {
+  list-style-type: decimal;
+}
+
+// HTML Elements: Links
+// Use the 'link' class to mimic the default link styles
+a, .link {
+  color: $color-link;
+  text-decoration: none;
+  cursor: pointer;
+}

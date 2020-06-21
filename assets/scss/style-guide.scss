@@ -44,6 +44,9 @@ $zindex-styleguide-menu: 1000;
   overflow: auto;
   z-index: $zindex-styleguide-menu;
   transition: all 0.2s linear;
+  list-style-type: none;
+  margin-bottom: 0;
+  padding-left: 0;
 
   @media(max-width: $media-sm-max) {
     left: -($styleguide-sidebar-width);
