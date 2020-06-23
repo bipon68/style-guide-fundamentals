@@ -966,6 +966,18 @@ svg {
   position: relative;
 }
 
+.border-radius {
+  border-radius: 10px;
+}
+
+.border-radius-lg {
+  border-radius: 20px;
+}
+
+.border-radius-xl {
+  border-radius: 30px;
+}
+
 .icon-size-lg {
   font-size: 114.2857142857%;
 }
@@ -1398,6 +1410,64 @@ textarea {
 
 .card-progress-target {
   margin-left: auto;
+}
+
+.tab-block {
+  list-style-type: none;
+  margin-bottom: 0;
+  padding-left: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+.tab-block li {
+  margin-bottom: 0;
+}
+
+.tab-each:first-of-type .tab-each-anchor {
+  border-radius: 10px 0 0 10px;
+}
+.tab-each:last-of-type .tab-each-anchor {
+  border-radius: 0 10px 10px 0;
+}
+
+.tab-each-anchor {
+  color: #666;
+  background: #FFF;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  font-weight: 700;
+  text-align: center;
+  padding: 15px;
+  display: flex;
+  align-items: center;
+}
+.tab-each-anchor[aria-selected=true] {
+  color: #FFF;
+  background: #313C5A;
+}
+
+.glider-block {
+  position: relative;
+}
+
+.glider-track {
+  align-items: center;
+}
+
+.glider-prev, .glider-next {
+  font-size: 32px;
+  top: 36%;
+}
+
+.glider-dot {
+  background: #AAA;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.glider-dot:hover,
+.glider-dot:focus,
+.glider-dot.active {
+  background: #75C8AA;
 }
 
 *, *:before, *:after {

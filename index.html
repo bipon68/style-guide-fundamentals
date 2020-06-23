@@ -37,7 +37,6 @@
             <li><a href="#styleguide-section-lists">Lists: Styled</a></li>
             <li><a href="#styleguide-section-cards">Cards</a></li>
             <li><a href="#styleguide-section-tabs">Tabs <span class="styleguide-link-label">JS</span></a></li>
-            <li><a href="#styleguide-section-sliders">Sliders &amp; Carousels <span class="styleguide-link-label">JS</span></a></li>
           </ul>
         </nav> <!-- /.styleguide-nav -->
         <section class="styleguide-content">
@@ -1452,44 +1451,52 @@
           <section id="styleguide-section-tabs" class="styleguide-section">
             <h2>Tabs</h2>
             <div class="styleguide-section-docs">
-              <p>{SECTION_DOCUMENTATION}</p>
+              <p>Tabs use the <a href="https://github.com/cferdinandi/tabby" target="_blank">Tabby plugin</a>.</p>
+              <p>Multiple instances can be created by changing the value of the data attribute on the list element.</p>
+              <p>For older browser support, the <em>tabby.polyfills.js</em> file or its minified version can be downloaded from the git repository and added to the list of scripts.</p>
             </div>
             <div class="styleguide-section-block">
-              <div class="styleguide-section-files">Reference files: {FILE_NAMES}</div>
-
-              <h3>{DEMO_TITLE}</h3>
-              <!-- Add optional documentation for this demo -->
-              <!-- <div class="styleguide-section-docs">
-                <p>{SECTION_DOCUMENTATION}</p>
-              </div> -->
+              <div class="styleguide-section-files">Reference files: _tabby.scss, _variables.scss, tabby.js</div>
               <div class="styleguide-demo-block">
                 <div class="styleguide-demo-each">
-                  {DEMO_MARKUP}
+                  <ul class="tab-block" data-tabs>
+                    <li class="tab-each">
+                      <a href="#tab-projects" class="tab-each-anchor" data-tabby-default>
+                        <span class="at-icon-leaf icon-left-lg"></span>
+                        <span>Projects</span>
+                      </a>
+                    </li>
+                    <li class="tab-each">
+                      <a href="#tab-payment" class="tab-each-anchor">
+                        <span class="at-icon-card icon-left-lg"></span>
+                        <span>Payment</span>
+                      </a>
+                    </li>
+                    <li class="tab-each">
+                      <a href="#tab-profile" class="tab-each-anchor">
+                        <span class="at-icon-user icon-left-lg"></span>
+                        <span>Profile</span>
+                      </a>
+                    </li>
+                  </ul>
+
+                  <div id="tab-projects" class="spacing-v">
+                    Content: Projects
+                  </div>
+                  <div id="tab-payment" class="spacing-v">
+                    Content: Payment
+                  </div>
+                  <div id="tab-profile" class="spacing-v">
+                    Content: Profile
+                  </div>
+
+                  <script>
+                    document.addEventListener("DOMContentLoaded", function() {
+                      var tabs = new Tabby('[data-tabs]');
+                    });
+                  </script>
                 </div> <!-- /.styleguide-demo-each -->
-                <button class="btn-styleguide-code js-btn-styleguide-code">Code</button>
-              </div> <!-- /.styleguide-demo-block -->
-
-            </div> <!-- /.styleguide-section-block -->
-          </section>
-
-          <section id="styleguide-section-sliders" class="styleguide-section">
-            <h2>Sliders &amp; Carousels</h2>
-            <div class="styleguide-section-docs">
-              <p>{SECTION_DOCUMENTATION}</p>
-            </div>
-            <div class="styleguide-section-block">
-              <div class="styleguide-section-files">Reference files: {FILE_NAMES}</div>
-
-              <h3>{DEMO_TITLE}</h3>
-              <!-- Add optional documentation for this demo -->
-              <!-- <div class="styleguide-section-docs">
-                <p>{SECTION_DOCUMENTATION}</p>
-              </div> -->
-              <div class="styleguide-demo-block">
-                <div class="styleguide-demo-each">
-                  {DEMO_MARKUP}
-                </div> <!-- /.styleguide-demo-each -->
-                <button class="btn-styleguide-code js-btn-styleguide-code">Code</button>
+                <button class="btn-styleguide-code js-btn-styleguide-code btn btn--brand-1 btn--sm">Code</button>
               </div> <!-- /.styleguide-demo-block -->
 
             </div> <!-- /.styleguide-section-block -->
@@ -1499,5 +1506,7 @@
     </main>
     <script src="assets/js/style-guide.js"></script>    
     <script src="assets/js/input-file-custom.js"></script>
+    <script src="assets/js/libs/tabby.js"></script>
+    <script src="assets/js/libs/glider.js"></script>
   </body>
 </html>

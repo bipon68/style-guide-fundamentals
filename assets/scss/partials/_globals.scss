@@ -108,6 +108,24 @@ svg {
     position: relative;
   }
 
+  // ---------------------------------------------
+// GLOBALS: BORDER RADIUS
+// Generates classes for border-radius on all sides
+// E.g., border-radius, border-radius-lg, border-radius-xl 
+
+// Sass Map to store border radius values
+$border-radius-map: (
+  "border-radius": $border-radius,
+  "border-radius-lg": $border-radius-lg,
+  "border-radius-xl": $border-radius-xl
+);
+
+// @each Sass loop to generate classes
+@each $name, $value in $border-radius-map {
+  .#{$name} {
+    border-radius: $value;
+  }
+}
   
 // ---------------------------------------------
 // GLOBALS: ICONS
