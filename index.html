@@ -1119,6 +1119,32 @@
                 <button class="btn-styleguide-code js-btn-styleguide-code btn btn--brand-1 btn--sm">Code</button>
               </div> <!-- /.styleguide-demo-block -->
 
+              <h3>Forms: File Input: Custom</h3>
+              <div class="styleguide-section-files">Reference files: _forms.scss, _variables.scss, input-file-custom.js</div> 
+              <div class="styleguide-section-docs">
+                <p>Ensure that the value of the input's <code class="styleguide-code-inline">ID</code> attribute matches that of the label's <code class="styleguide-code-inline">for</code> attribute.</p>
+                <p>The file input uses the FileReader API to display an image thumbnail of the uploaded file.</p>
+              </div>
+              <div class="styleguide-demo-block">
+                <div class="styleguide-demo-each">
+                  <div class="field">
+                    <input type="file" accept="image/*" id="js-demo-input-file" class="input-file">
+                    <label for="js-demo-input-file" class="btn btn--brand-1 input-file-label">
+                      <img src="assets/img/avatar/avatar-user.jpg" alt="" class="input-file-img" id="js-demo-input-file-image" width="44" height="44">Upload Photo
+                    </label>
+                  </div>
+
+                  <script>
+                    document.addEventListener("DOMContentLoaded", function() {
+                      document.getElementById("js-demo-input-file").addEventListener("change", function() {
+                        readURL(this, "js-demo-input-file-image");
+                      });
+                    });
+                  </script>
+                </div> <!-- /.styleguide-demo-each -->
+                <button class="btn-styleguide-code js-btn-styleguide-code btn btn--brand-1 btn--sm">Code</button>
+              </div> <!-- /.styleguide-demo-block -->
+
               <h3>Forms: Textareas</h3>
               <div class="styleguide-section-docs">Textareas reuse many of the classes used by text inputs.</div>
               <h4>Textareas: Default</h4>
@@ -1341,5 +1367,6 @@
         </section> <!-- /.styleguide-content -->
     </main>
     <script src="assets/js/style-guide.js"></script>    
+    <script src="assets/js/input-file-custom.js"></script>
   </body>
 </html>
