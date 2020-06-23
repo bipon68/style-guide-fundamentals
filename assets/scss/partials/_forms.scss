@@ -120,6 +120,41 @@ input, select {
     resize: vertical;
   }
   
+  // ---------------------------------------------
+// FORMS: INPUTS: GROUP
+// Use for text inputs and textareas with a label or icon that appears to be inside the input
+
+// Input Group Mixin
+//  - All parameters have defaults
+//  - Parameters:
+//    - $color {string} : Text color
+//    - $color-bg {string} : Background color
+//    - $color-border {string} : Border color
+@mixin input-group($color: $color-font, $color-bg: $white, $color-border: $color-input-border) {
+    color: $color;
+    background-color: $color-bg;
+    border: 1px solid $color-border;
+    border-radius: $border-radius-xl;
+    display: flex;
+  }
+  
+  // Input Groups: Default style
+  .input-group {
+    @include input-group;
+  }
+  
+  .input-group-text {
+    @include form-text($color-bg: transparent);
+    border: none;
+  }
+  
+  .input-group-label {
+    color: $gray-cement;
+    font-weight: $font-bold;
+    text-transform: uppercase;
+    padding: 0 ($spacing * 1.5) 0 0;
+    align-self: center;
+  }
   
   // ---------------------------------------------
   // FORMS: TEXT INPUTS, TEXTAREAS, SELECTS: SIZES

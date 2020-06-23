@@ -1112,6 +1112,52 @@ textarea {
   resize: vertical;
 }
 
+.input-group {
+  color: #666;
+  background-color: #FFF;
+  border: 1px solid #DADEE8;
+  border-radius: 30px;
+  display: flex;
+}
+
+.input-group-text {
+  color: #222;
+  background-color: transparent;
+  border: 1px solid #DADEE8;
+  border-radius: 30px;
+  font-size: 14px;
+  font-family: "Nunito Sans", sans-serif;
+  line-height: 1.5;
+  padding: 10px 15px;
+  display: block;
+  width: 100%;
+  transition: all 0.2s linear;
+  border: none;
+}
+.input-group-text.placeholder {
+  color: #AAA;
+}
+.input-group-text:-moz-placeholder {
+  color: #AAA;
+}
+.input-group-text::-moz-placeholder {
+  color: #AAA;
+}
+.input-group-text:-ms-input-placeholder {
+  color: #AAA;
+}
+.input-group-text::-webkit-input-placeholder {
+  color: #AAA;
+}
+
+.input-group-label {
+  color: #999;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 0 15px 0 0;
+  align-self: center;
+}
+
 .form-text--sm {
   font-size: 85.7142857143%;
   padding: 5px 10px;
