@@ -890,6 +890,22 @@ a, .link {
   cursor: pointer;
 }
 
+.link-action {
+  color: #313C5A;
+  font-weight: 700;
+}
+
+.link-action-icon {
+  color: #75C8AA;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.link-action-text {
+  text-transform: uppercase;
+  vertical-align: middle;
+}
+
 img, video, svg {
   max-width: 100%;
   height: auto;
@@ -1301,6 +1317,87 @@ textarea {
 .btn--list-each {
   position: relative;
   top: -14px;
+}
+
+.card {
+  background-color: #FFF;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.card-banner {
+  position: relative;
+}
+
+.overlay--card-banner {
+  border-radius: 10px 10px 0 0;
+}
+
+.card-banner-img {
+  border-radius: 10px 10px 0 0;
+  width: 100%;
+  display: block;
+}
+
+.card-banner-content {
+  color: #FFF;
+  padding: 15px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+
+.card-location > span, .card-tree-cost > span {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.card-tree-cost {
+  margin-left: auto;
+}
+
+.card-banner-title {
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 700;
+  width: calc(100% - 30px);
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.card-banner-icons {
+  text-align: center;
+  width: 100%;
+  position: absolute;
+  bottom: 15px;
+  left: 0;
+  right: 0;
+}
+
+.card-banner-icon {
+  font-size: 128.5714285714%;
+  margin-left: 5px;
+}
+.card-banner-icon:first-of-type {
+  margin-left: 0;
+}
+
+.card-content {
+  padding: 15px;
+  position: relative;
+}
+
+.card-progress-text {
+  font-size: 85.7142857143%;
+  font-weight: 700;
+  padding: 10px 0 0 0;
+}
+
+.card-progress-target {
+  margin-left: auto;
 }
 
 *, *:before, *:after {

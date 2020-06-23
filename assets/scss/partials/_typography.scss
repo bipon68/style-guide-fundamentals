@@ -167,3 +167,24 @@ a, .link {
   text-decoration: none;
   cursor: pointer;
 }
+
+
+// ---------------------------------------------
+// TYPOGRAPHY: LINKS: ACTION
+// Use for styled links with an arrow and uppercase text
+
+.link-action {
+  color: $brand-2;
+  font-weight: $font-bold;
+}
+
+.link-action-icon {
+  color: $brand-1-light;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.link-action-text {
+  text-transform: uppercase;
+  vertical-align: middle;
+}

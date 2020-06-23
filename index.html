@@ -849,7 +849,17 @@
                   <span class="link">Class to make something resemble a link</span>
                 </div> <!-- /.styleguide-demo-each -->
                 <button class="btn-styleguide-code js-btn-styleguide-code">Code</button>
-              </div> <!-- /.styleguide-demo-block -->              
+              </div> <!-- /.styleguide-demo-block -->  
+              
+              <div class="styleguide-demo-block">
+                <div class="styleguide-demo-each">
+                  <a href="#" class="link-action">
+                    <span class="at-icon-arrow-right link-action-icon"></span>
+                    <span class="link-action-text font-size-sm">Read More</span>
+                  </a>
+                </div> <!-- /.styleguide-demo-each -->
+                <button class="btn-styleguide-code js-btn-styleguide-code btn btn--brand-1 btn--sm">Code</button>
+              </div> <!-- /.styleguide-demo-block -->
 
               <h3>Typography: Lists</h3>
               <div class="styleguide-demo-block">
@@ -1382,24 +1392,61 @@
           <section id="styleguide-section-cards" class="styleguide-section">
             <h2>Cards</h2>
             <div class="styleguide-section-docs">
-              <p>{SECTION_DOCUMENTATION}</p>
+              <p>Cards are used to provide snapshots and summaries of content.</p>
+              <p>They can be modified with banner images, icons, progress bars and more.</p>
             </div>
             <div class="styleguide-section-block">
-              <div class="styleguide-section-files">Reference files: {FILE_NAMES}</div>
+              <div class="styleguide-section-files">Reference files: _components.scss, _.variables.scss</div>
 
-              <h3>{DEMO_TITLE}</h3>
-              <!-- Add optional documentation for this demo -->
-              <!-- <div class="styleguide-section-docs">
-                <p>{SECTION_DOCUMENTATION}</p>
-              </div> -->
+              <h3>Card with Banner Image and Progress Bar</h3>
               <div class="styleguide-demo-block">
                 <div class="styleguide-demo-each">
-                  {DEMO_MARKUP}
+                  <div class="card">
+                    <div class="card-banner">
+                      <div class="overlay overlay--card-banner"></div>
+                      <img src="assets/img/borneo-tree-planting-600px.jpg" alt="Tree Planting at Borneo" width="600" height="450" class="card-banner-img">
+                      <div class="card-banner-content">
+                        <div class="row-sm flex">
+                          <div class="col-sm card-location">
+                            <span class="at-icon-map icon-left"></span>
+                            <span class="font-size-sm font-bold">Borneo, Indonesia</span>
+                          </div>
+                          <div class="col-sm card-tree-cost">
+                            <span class="at-icon-dollar font-size-sm"></span>
+                            <span class="font-size-sm font-bold">1</span>
+                            <span class="at-icon-leaf icon-right"></span>
+                          </div>
+                        </div>                        
+                        <div class="card-banner-title">Afforestation near Coastal Forest</div>
+                        <div class="card-banner-icons">
+                          <span class="at-icon-droplet card-banner-icon" title="Water Conservation"></span>
+                          <span class="at-icon-paw card-banner-icon" title="Wildlife Zone"></span>
+                          <span class="at-icon-atom card-banner-icon" title="Carbon Sink"></span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card-content">
+                      <div class="progress-bar">
+                        <div class="progress-bar-value" style="width: 4%;"></div>
+                      </div>                      
+                      <div class="row-sm flex card-progress-text">
+                        <div class="col-sm">4%</div>
+                        <div class="col-sm card-progress-target">
+                          <span>75000</span>
+                          <span class="at-icon-target brand-1 icon-size-xl"></span>
+                        </div>
+                      </div>
+                      <div class="text-center spacing-2-t">
+                        <a href="#" class="link-action">
+                          <span class="at-icon-arrow-right link-action-icon"></span>
+                          <span class="link-action-text font-size-sm">Read More</span>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
                 </div> <!-- /.styleguide-demo-each -->
-                <button class="btn-styleguide-code js-btn-styleguide-code">Code</button>
+                <button class="btn-styleguide-code js-btn-styleguide-code btn btn--brand-1 btn--sm">Code</button>
               </div> <!-- /.styleguide-demo-block -->
-
-            </div> <!-- /.styleguide-section-block -->
           </section>
 
           <section id="styleguide-section-tabs" class="styleguide-section">
