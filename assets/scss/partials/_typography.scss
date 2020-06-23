@@ -166,6 +166,16 @@ a, .link {
   color: $color-link;
   text-decoration: none;
   cursor: pointer;
+  transition: $transition-linear;
+
+  &:hover {
+    color: $color-link-hover;
+    transition: $transition-linear;
+  }
+
+  &:focus {
+    outline: 1px solid $color-focus;
+  }
 }
 
 

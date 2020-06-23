@@ -22,7 +22,7 @@
     cursor: pointer;
     transition: $transition-linear;
   
-    &:hover {
+    &:hover, &:focus {
       transition: $transition-ease-in;
     }
   }
@@ -49,7 +49,7 @@
     border-color: $color-border;
     box-shadow: $box-shadow;
   
-    &:hover {
+    &:hover, &:focus {
       color: $color;
       background-color: $color-bg-hover;
       border-color: $color-bg-hover;
@@ -99,8 +99,11 @@
     background-color: transparent;
     border-color: $color-border;
    
-    &:hover {
+    &:hover, &:focus {
       color: $color-hover;
+    }
+    &:focus {
+      outline: 1px solid $color-focus;
     }
   }
   

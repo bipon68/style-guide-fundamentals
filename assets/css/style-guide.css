@@ -26,9 +26,6 @@
   overflow: auto;
   z-index: 1000;
   transition: all 0.2s linear;
-  list-style-type: none;
-  margin-bottom: 0;
-  padding-left: 0;
 }
 @media (max-width: 599px) {
   .styleguide-sidebar {

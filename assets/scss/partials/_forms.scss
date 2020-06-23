@@ -73,6 +73,15 @@ input, select {
       @content;
     }
   }
+
+  // ---------------------------------------------
+// FORMS: FOCUS STATE: MIXIN
+@mixin form-focus {
+  outline: 0;
+  border: 1px solid $color-focus;
+  transition: $transition-linear;
+}
+
   
   
   // ---------------------------------------------
@@ -100,6 +109,9 @@ input, select {
   
     @include input-placeholder {
       color: $color-placeholder;
+    }
+    &:focus {
+      @include form-focus;
     }
   }
   
@@ -152,6 +164,10 @@ input, select {
     border: 1px solid $color-border;
     border-radius: $border-radius-xl;
     display: flex;
+
+    &:focus-within {
+      @include form-focus;
+    }
   }
   
   // Input Groups: Default style
@@ -162,6 +178,9 @@ input, select {
   .input-group-text {
     @include form-text($color-bg: transparent);
     border: none;
+    &:focus {
+      border: none;
+    }
   }
   
   .input-group-label {
@@ -192,6 +211,10 @@ input, select {
 .input-file {
     opacity: 0;
     position: absolute;
+
+    &:focus + .input-file-label {
+      outline: 1px solid $color-focus;
+    }
   }
   
   .input-file-label {
