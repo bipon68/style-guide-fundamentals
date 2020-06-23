@@ -1,0 +1,135 @@
+// ---------------------------------------------
+// FORMS
+
+
+// ---------------------------------------------
+// FORMS: OVERRIDES FOR BROWSER QUIRKS
+
+input, select {
+    border-radius: 0; // Removes border-radius on iOS
+    box-shadow: none; // Removes red border on inputs with 'required' attribute: Firefox
+    background-clip: padding-box; // Removes inset shadow on inputs on iOS
+  }
+  
+  input[type="submit"].btn {
+    -webkit-appearance: none;  // Fix for inputs with type submit to ensure styles are honored on iOS
+  }
+  
+  
+  // ---------------------------------------------
+  // FORMS: FIELDS
+  // Fields provide spacing between form elements
+  
+  .field {
+    margin-bottom: $spacing-2;
+  }
+  
+  
+  // ---------------------------------------------
+  // FORMS: LABELS
+  
+  // Label: Default
+  .label {
+    color: $gray-coal;
+    font-weight: $font-bold;
+    margin-bottom: $spacing;
+    display: block;
+  }
+  
+  // Label: Size: Large: Modifier
+  .label--lg {
+    font-size: $font-size-lg;
+  }
+  
+  
+  // ---------------------------------------------
+  // FORMS: PLACEHOLDER: MIXIN
+  
+  // Use the mixin like this:
+  // @include input-placeholder { color: #000; }
+  @mixin input-placeholder {
+    &.placeholder {
+      @content;
+    }
+  
+    &:-moz-placeholder {
+      @content;
+    }
+    
+    &::-moz-placeholder {
+      @content;
+    }
+    
+    &:-ms-input-placeholder {
+      @content;
+    }
+    
+    &::-webkit-input-placeholder { 
+      @content;
+    }
+  }
+  
+  
+  // ---------------------------------------------
+  // FORMS: TEXT INPUTS, TEXTAREAS, SELECTS
+  
+  // Form Styling: Text Inputs, Textareas, Selects: Mixin
+  //  - All parameters have defaults
+  //  - Parameters:
+  //    - $color {string} : Text color
+  //    - $color-bg {string} : Background color
+  //    - $color-border {string} : Border color
+  //    - $color-placeholder {string} : Placeholder color
+  @mixin form-text($color: $gray-coal, $color-bg: $white, $color-border: $color-input-border, $color-placeholder: $color-input-placeholder) {
+    color: $color;
+    background-color: $color-bg;
+    border: 1px solid $color-border;
+    border-radius: $border-radius-xl;
+    font-size: $font-size;
+    font-family: $font-family-1;
+    line-height: $line-height;
+    padding: $btn-padding-v ($spacing * 1.5);
+    display: block;
+    width: 100%;
+    transition: $transition-linear;
+  
+    @include input-placeholder {
+      color: $color-placeholder;
+    }
+  }
+  
+  // Forms: Use this class for text inputs, textareas and selects
+  .form-text {
+    @include form-text;
+  }
+  
+  // Selects: Additional styling: Modifier
+  .form-text--select {
+    background-image: url(../../assets/svg/icons/icon-chevron-down.svg);
+    background-repeat: no-repeat;
+    background-position: right $spacing center;
+    background-size: 18px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+  }
+    
+  // Textareas: Basic styling
+  textarea {
+    min-height: 110px;
+    resize: vertical;
+  }
+  
+  
+  // ---------------------------------------------
+  // FORMS: TEXT INPUTS, TEXTAREAS, SELECTS: SIZES
+  
+  // Size: Small: Modifier
+  @mixin form-text--sm {
+    font-size: $font-size-sm;
+    padding: $btn-padding-v-sm $spacing;
+  }
+  
+  .form-text--sm {
+    @include form-text--sm;
+  }

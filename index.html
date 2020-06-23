@@ -1063,21 +1063,79 @@
           <section id="styleguide-section-forms" class="styleguide-section">
             <h2>Forms</h2>
             <div class="styleguide-section-docs">
-              <p>{SECTION_DOCUMENTATION}</p>
+              <p>Wrap form elements in a <code class="styleguide-code-inline">form</code> tag.</p>
+              <p>Use the <code class="styleguide-code-inline">field</code> class to add a bottom margin to form elements.</p>
+              <p>Text-based inputs, textareas and selects use the <code class="styleguide-code-inline">form-text</code> class for styling and the same classes for sizes, variants and states.</p>
+              <p>Ensure the <code class="styleguide-code-inline">for</code> attribute of a label matches the <code class="styleguide-code-inline">ID</code> attribute of the input associated with it.</p>
             </div>
             <div class="styleguide-section-block">
-              <div class="styleguide-section-files">Reference files: {FILE_NAMES}</div>
+              <div class="styleguide-section-files">Reference files:  _forms.scss, _variables.scss</div>
 
-              <h3>{DEMO_TITLE}</h3>
-              <!-- Add optional documentation for this demo -->
-              <!-- <div class="styleguide-section-docs">
-                <p>{SECTION_DOCUMENTATION}</p>
-              </div> -->
+              <h3>Forms: Labels</h3>
+              <div class="styleguide-section-docs">
+                <p>For demo purposes, the labels below have no <code class="styleguide-code-inline">for</code> attribute, since no input is associated with them.</p>
+              </div>
               <div class="styleguide-demo-block">
                 <div class="styleguide-demo-each">
-                  {DEMO_MARKUP}
+                  <label class="label">Label: Default</label>
+                  <label class="label label--lg">Label: Size: Large</label>
                 </div> <!-- /.styleguide-demo-each -->
-                <button class="btn-styleguide-code js-btn-styleguide-code">Code</button>
+                <button class="btn-styleguide-code js-btn-styleguide-code btn btn--brand-1 btn--sm">Code</button>
+              </div> <!-- /.styleguide-demo-block -->
+
+              <h3>Forms: Inputs</h3>
+              <h4>Inputs: Default</h4>
+              <div class="styleguide-demo-block">
+                <div class="styleguide-demo-each">
+                  <div class="field">
+                    <label for="demo-input-default" class="label">Input: Default</label>
+                    <input type="text" class="form-text" placeholder="Placeholder Text" id="demo-input-default">
+                  </div>
+                </div> <!-- /.styleguide-demo-each -->
+                <button class="btn-styleguide-code js-btn-styleguide-code btn btn--brand-1 btn--sm">Code</button>
+              </div> <!-- /.styleguide-demo-block -->
+
+              <h4>Inputs: Sizes</h4>
+              <div class="styleguide-demo-block">
+                <div class="styleguide-demo-each">
+                  <div class="field">
+                    <label for="demo-input-sm" class="label">Input: Size: Small</label>
+                    <input type="text" class="form-text form-text--sm" placeholder="Placeholder Text" id="demo-input-sm">
+                  </div>
+                </div> <!-- /.styleguide-demo-each -->
+                <button class="btn-styleguide-code js-btn-styleguide-code btn btn--brand-1 btn--sm">Code</button>
+              </div> <!-- /.styleguide-demo-block -->
+
+              <h3>Forms: Textareas</h3>
+              <div class="styleguide-section-docs">Textareas reuse many of the classes used by text inputs.</div>
+              <h4>Textareas: Default</h4>
+              <div class="styleguide-demo-block">
+                <div class="styleguide-demo-each">
+                  <div class="field">
+                    <label for="demo-textarea-default" class="label">Textarea: Default</label>
+                    <textarea class="form-text" id="demo-textarea-default" placeholder="Placeholder Text"></textarea>
+                  </div>
+                </div> <!-- /.styleguide-demo-each -->
+                <button class="btn-styleguide-code js-btn-styleguide-code btn btn--brand-1 btn--sm">Code</button>
+              </div> <!-- /.styleguide-demo-block -->
+
+              <h3>Forms: Selects</h3>
+              <div class="styleguide-section-docs">
+                <p>Selects reuse many of the classes of text inputs.</p>
+              </div>
+              <h4>Select: Default</h4>
+              <div class="styleguide-demo-block">
+                <div class="styleguide-demo-each">
+                  <div class="field">
+                    <label for="demo-select" class="label">Label</label>
+                    <select class="form-text form-text--select" id="demo-select">
+                      <option value="water-conservation">Water Conservation</option>
+                      <option value="biodiversity-hotspot">Biodiversity Hotspot</option>
+                      <option value="wildlife-zone">Wildlife Zone</option>
+                    </select>
+                  </div>
+                </div> <!-- /.styleguide-demo-each -->
+                <button class="btn-styleguide-code js-btn-styleguide-code btn btn--brand-1 btn--sm">Code</button>
               </div> <!-- /.styleguide-demo-block -->
 
             </div> <!-- /.styleguide-section-block -->
