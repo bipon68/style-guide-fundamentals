@@ -961,6 +961,88 @@ svg {
   margin-left: 10px;
 }
 
+.btn {
+  border-radius: 30px;
+  border: 1px solid;
+  font-size: 14px;
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+  text-decoration: none;
+  line-height: 1.5;
+  padding: 10px 30px;
+  display: inline-block;
+  outline: none;
+  cursor: pointer;
+  transition: all 0.2s linear;
+}
+.btn:hover {
+  transition: all 0.2s ease-in;
+}
+
+.btn--brand-1 {
+  color: #FFF;
+  background-color: #3ABB8D;
+  border-color: #3ABB8D;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+.btn--brand-1:hover {
+  color: #FFF;
+  background-color: #75C8AA;
+  border-color: #75C8AA;
+}
+
+.btn--brand-2 {
+  color: #FFF;
+  background-color: #313C5A;
+  border-color: #313C5A;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+.btn--brand-2:hover {
+  color: #FFF;
+  background-color: #41568C;
+  border-color: #41568C;
+}
+
+.btn-hollow--brand-1 {
+  color: #3ABB8D;
+  background-color: transparent;
+  border-color: currentColor;
+}
+.btn-hollow--brand-1:hover {
+  color: #75C8AA;
+}
+
+.btn-hollow--brand-2 {
+  color: #313C5A;
+  background-color: transparent;
+  border-color: currentColor;
+}
+.btn-hollow--brand-2:hover {
+  color: #41568C;
+}
+
+.btn-hollow--white {
+  color: #FFF;
+  background-color: transparent;
+  border-color: currentColor;
+}
+.btn-hollow--white:hover {
+  color: #DADEE8;
+}
+
+.btn--sm {
+  font-size: 85.7142857143%;
+  padding: 5px 30px;
+}
+
+.btn--xs {
+  font-size: 71.4285714286%;
+  padding: 5px 15px;
+  line-height: 1.2;
+}
+
 *, *:before, *:after {
   box-sizing: border-box;
 }
