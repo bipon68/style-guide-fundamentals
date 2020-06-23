@@ -1,0 +1,49 @@
+// ---------------------------------------------
+// COMPONENTS
+
+
+// ---------------------------------------------
+// COMPONENTS: CONTENT BLOCKS
+
+.content-block {
+    background-color: $white;
+    border-radius: $border-radius;
+    box-shadow: $box-shadow;
+    padding: ($spacing * 1.5);
+  }
+  
+  
+  // ---------------------------------------------
+  // COMPONENTS: PROGRESS BARS
+  
+  .progress-bar {
+    background-color: $brand-1-x-light;
+    border-radius: $border-radius-xl;
+    height: 15px;
+  }
+  
+  .progress-bar-value {
+    background-color: $brand-1;
+    border-radius: inherit;
+    height: inherit;
+  }
+  
+  
+  // ---------------------------------------------
+  // COMPONENTS: AVATARS
+  
+  .avatar-img {
+    border-radius: 50%;
+    box-shadow: $box-shadow;
+    margin: 0 auto $spacing-half;
+    display: block;  
+   }
+  
+   .avatar-username {
+    font-size: $h1;
+    font-weight: $font-semi-bold;
+  }
+  
+  .avatar-meta-info {
+    font-weight: $font-bold;
+  }
