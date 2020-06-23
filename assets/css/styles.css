@@ -875,6 +875,15 @@ ol {
   list-style-type: decimal;
 }
 
+.list-reset {
+  list-style-type: none;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+.list-reset li {
+  margin-bottom: 0;
+}
+
 a, .link {
   color: #3ABB8D;
   text-decoration: none;
@@ -888,6 +897,14 @@ img, video, svg {
 
 svg {
   max-height: 100%;
+}
+
+.padding-reset {
+  padding: 0 !important;
+}
+
+.margin-reset {
+  margin: 0 !important;
 }
 
 .full-width {
@@ -1041,6 +1058,25 @@ svg {
   font-size: 71.4285714286%;
   padding: 5px 15px;
   line-height: 1.2;
+}
+
+.btn-reset {
+  color: #666;
+  background: none;
+  border: none;
+  border-radius: 0;
+  box-shadow: none;
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.5;
+  text-align: left;
+  text-transform: inherit;
+  padding: 0;
+}
+.btn-reset:hover {
+  color: #666;
+  background: none;
 }
 
 input, select {

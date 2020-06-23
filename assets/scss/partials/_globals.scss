@@ -15,6 +15,23 @@ svg {
 }
 
 // ---------------------------------------------
+// GLOBALS: PADDING: RESET
+// Resets padding on all sides
+
+.padding-reset {
+  padding: 0 !important;
+}
+
+// ---------------------------------------------
+// GLOBALS: MARGINS: RESET
+// Resets margins on all sides
+
+.margin-reset {
+  margin: 0 !important;
+}
+
+
+// ---------------------------------------------
 // GLOBALS: FULL WIDTH
 // Use for images, HTML5 videos and any element which needs to fill up its parent's width
 

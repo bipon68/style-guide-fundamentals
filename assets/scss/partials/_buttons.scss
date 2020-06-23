@@ -146,3 +146,32 @@
   .btn--xs {
     @include btn--xs;
   }
+
+  
+// ---------------------------------------------
+// BUTTONS: RESET STYLES
+// Use for resetting styles on HTML Buttons
+
+@mixin btn-reset {
+  color: $color-font;
+  background: none;
+  border: none;
+  border-radius: 0;
+  box-shadow: none;
+  font-family: $font-family-1;
+  font-size: $font-size;
+  font-weight: $font-regular;
+  line-height: $line-height;
+  text-align: left;
+  text-transform: inherit;
+  padding: 0;
+
+  &:hover {
+    color: $color-font;
+    background: none;
+  }
+}
+
+.btn-reset {
+  @include btn-reset;
+}

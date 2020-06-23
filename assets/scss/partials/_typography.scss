@@ -145,6 +145,21 @@ ol {
   list-style-type: decimal;
 }
 
+// HTML Elements: Lists: Reset styling
+@mixin list-reset {
+  list-style-type: none;
+  margin-bottom: 0;
+  padding-left: 0;
+
+  li {
+    margin-bottom: 0;
+  }
+}
+
+.list-reset {
+  @include list-reset;
+}
+
 // HTML Elements: Links
 // Use the 'link' class to mimic the default link styles
 a, .link {
