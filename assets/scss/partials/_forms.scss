@@ -41,6 +41,11 @@ input, select {
     font-size: $font-size-lg;
   }
   
+  // Label: Inverse Styles: Modifier
+.label--inverse {
+  color: $white;
+}
+
   
   // ---------------------------------------------
   // FORMS: PLACEHOLDER: MIXIN
@@ -119,6 +124,17 @@ input, select {
     min-height: 110px;
     resize: vertical;
   }
+
+  // Inverse Styles: Text inputs, textareas and selects
+// Use on dark backgrounds
+// Form text inverse: Mixin
+@mixin form-text-inverse {
+  @include form-text($color: $white, $color-bg: transparent, $color-border: $white, $color-placeholder: $gray-cloud);
+}
+
+.form-text-inverse {
+  @include form-text-inverse;
+}
   
   // ---------------------------------------------
 // FORMS: INPUTS: GROUP

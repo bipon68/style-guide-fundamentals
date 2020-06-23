@@ -73,6 +73,15 @@
   .btn--brand-2 {
     @include btn--brand-2;
   }
+    // Button: Solid: White: Modifier
+@mixin btn--white {
+  @include btn-solid($color: $brand-1, $color-bg: $white, $color-bg-hover: $gray-mist);
+}
+
+.btn--white {
+  @include btn--white;
+}
+
   
   
   // ---------------------------------------------
@@ -121,6 +130,8 @@
   .btn-hollow--white {
     @include btn-hollow--white;
   }
+
+
   
   
   // ---------------------------------------------
