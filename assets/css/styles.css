@@ -881,6 +881,20 @@ a, .link {
   cursor: pointer;
 }
 
+img, video, svg {
+  max-width: 100%;
+  height: auto;
+}
+
+svg {
+  max-height: 100%;
+}
+
+.full-width {
+  display: block;
+  width: 100%;
+}
+
 .center-element {
   margin-left: auto;
   margin-right: auto;
