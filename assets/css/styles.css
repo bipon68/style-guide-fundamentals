@@ -1298,6 +1298,11 @@ textarea {
   font-style: italic;
 }
 
+.btn--list-each {
+  position: relative;
+  top: -14px;
+}
+
 *, *:before, *:after {
   box-sizing: border-box;
 }
